@@ -1,0 +1,4 @@
+*.pid
+*.py[co]
+.*.sw?
+output/
