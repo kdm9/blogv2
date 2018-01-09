@@ -37,6 +37,12 @@ ifeq ($(RELATIVE), 1)
 	PELICANOPTS += --relative-urls
 endif
 
+all: html
+
+.PHONY: new all
+new:
+	@test -n "$(slug)" && vim content/posts/$(shell date +%Y-%m)_$(slug).rst || echo "ERROR: must set slug like 'make new slug=post-slug'"
+
 help:
 	@echo 'Makefile for a pelican Web site                                           '
 	@echo '                                                                          '
