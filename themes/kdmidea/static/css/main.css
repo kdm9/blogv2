@@ -1,0 +1,24 @@
+@import url("reset.css");
+@import url("original_main.css");
+@import url("../fonts/cm-webfont/fonts.css");
+
+div.figure {
+    width 90%;
+    margin 0 auto;
+    /*display: flex;
+    justify-content: center;*/
+    border 1px solid #eeeeee;
+    padding 0.5em;
+}
+
+.figure img {
+    width: 100%
+}
+
+body {
+    font-family: "Computer Modern Serif", serif;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: "Computer Modern Concrete", serif;
+}

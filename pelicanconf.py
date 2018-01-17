@@ -7,6 +7,7 @@ SITENAME = 'A Bag of Words'
 SITEURL = ''
 
 PATH = 'content'
+THEME= 'themes/kdmidea'
 
 TIMEZONE = 'Australia/Sydney'
 
