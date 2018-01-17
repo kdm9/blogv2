@@ -3,9 +3,7 @@
 :tags: spectralphenoclimatron, growth conditions, experiments
 :category: Biology
 :status: published
-
-The Arabidopsis Transcriptome under Dynamic Light Conditions
-############################################################
+:title: The Arabidopsis Transcriptome under Dynamic Light Conditions
 
 My Honours project
 ==================

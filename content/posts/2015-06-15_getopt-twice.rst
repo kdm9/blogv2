@@ -3,11 +3,9 @@
 :category: Programming
 :slug: getopt-twice
 :author: Kevin Murray
-:summary: Getopt won't run twice? There's an easy fix
 :status: published
-
-Using ``getopt`` twice in one program
-#####################################
+:title: Using ``getopt`` twice in one program
+:summary: Getopt won't run twice? There's an easy fix
 
 
 If you have code like:
