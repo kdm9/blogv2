@@ -24,7 +24,7 @@ AUTHOR_FEED_RSS = None
 
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
-    ("Home", "/"),
+    ("Archives", "/archives.html"),
     ("About", "/about/"),
     ("Projects", "/projects/")
 )
@@ -42,11 +42,12 @@ SOCIAL = (
     ('GitHub', 'https://github.com/kdmurray91'),
 )
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
+SLUGIFY_SOURCE = 'basename'
 
 STATIC_PATHS = [
     'images',
@@ -59,12 +60,19 @@ EXTRA_PATH_METADATA = {
 }
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['pelican-page-hierarchy',]
+PLUGINS = [
+    'pelican-page-hierarchy',
+    'summary',
+    'clean_summary',
+]
 
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
+PAGE_URL = 'pages/{slug}/'
+PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
-# Page hierarchy
-PAGE_URL = '{slug}/'
-PAGE_SAVE_AS = '{slug}/index.html'
-SLUGIFY_SOURCE = 'basename'
+# Page hierarchy plugin
+PATH_METADATA = 'pages/(?P<path>.*)\..*'
 
-
+# summary plugin
+SUMMARY_USE_FIRST_PARAGRAPH = True
