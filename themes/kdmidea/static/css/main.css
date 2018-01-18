@@ -31,3 +31,22 @@ nav a {
 body p, body li, body tr {
     font-size: 1.2em;
 }
+
+/* narrower padding on navbar items */
+#banner nav a:link, #banner nav a:visited {
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+
+#posts-list footer {
+    position: relative;
+    float: left;
+    font-size: 80%;
+    width: 180px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
