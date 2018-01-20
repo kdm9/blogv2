@@ -20,6 +20,3 @@ Bioinformatics Software
    knife. SeqHax is designed to complement tools like Heng Li's seqtk with
    additional features for low-level sequence file manipulation (like checking
    that all read pairs are correctly paired, or truncating reads at a given length).
-
-.. [1] this is missspelled
-
