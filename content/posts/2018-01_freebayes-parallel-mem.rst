@@ -1,7 +1,7 @@
 :author: Kevin Murray
 :date: 2018-01-14
 :tags: variant calling, bioinformatics, tips
-:category: Short Notes
+:category: Tips & Tricks
 :status: published
 :title: Freebayes uses too much ram without merged BAMs
 
