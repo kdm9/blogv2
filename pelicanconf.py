@@ -50,7 +50,7 @@ RELATIVE_URLS = True
 SLUGIFY_SOURCE = 'basename'
 
 STATIC_PATHS = [
-    'images',
+    'posts/img',
     'extra/robots.txt',
     'extra/favicon.ico'
 ]
